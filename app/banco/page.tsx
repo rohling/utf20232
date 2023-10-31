@@ -1,5 +1,4 @@
 import { sql } from "@vercel/postgres";
-
 export default async function Home(){
   const { rows } = await sql`SELECT * from student`;
 
